@@ -1,16 +1,16 @@
 \subsection{Cosmic Ray Ionisation and Heating}
 \label{CRchem}
-Over the length scale of our simulation box, the IGM is optically thin to cosmic rays above $10^6\ev$. This allows us to implement a uniform CR background as discussed in \RefSec{context} by assuming attenuation of the incident radiation while penetrating the minihalo is negligible, such that the ionisation rate coefficient for atomic hydrogen \citep{Schlickeiser2002} can be written as
+Over the length scale of our simulation box, the IGM is optically thin to cosmic rays above $10^6\ev$. This allows us to implement a uniform CR background as discussed in \RefSec{context} by assuming attenuation of the incident radiation while penetrating the minihalo is negligible, such that the ionisation rate coefficient $k_{\rm \small CR}$ for atomic hydrogen \citep{Schlickeiser2002} can be written as
 \begin{equation}
 k_{\rm \small CR} = \frac{1.82\times10^{-7}\,{\rm \small eV\,s}^{-1}}{50\,{\rm \small eV}} 
     \int_{\epsilon_{\rm min}}^{\epsilon_{\rm max}} f(\epsilon) \frac{dn_{\rm \tiny CR}}{d\epsilon} d\epsilon,
 \end{equation}
-where
+where $\epsilon_{\rm min} = 10^6\ev$, $\epsilon_{\rm max}= 10^{15}\ev$,
 \begin{equation}    
     f(\epsilon) = (1 + 0.0185 \,{\rm ln}\beta )\, \frac{2 \beta^2}{\beta_0^3 + 2 \beta^3}
 \end{equation}
 and
 \begin{equation}
-    \beta =  \sqrt{1 - \left( \frac{\epsilon}{m_{\rm \tiny H}c^2}+1 \right)^{-2}},
+    \beta =  \sqrt{1 - \left( \frac{\epsilon}{m_{\rm \tiny H}c^2}+1 \right)^{-2}}.
 \end{equation}
 Here, $n_{\rm \small H}$ is the number density of hydrogen, $E_{\rm \small heat}$ is the energy deposited as heat in a neutral medium, $m_{\rm \small H}$ is the mass of hydrogen, $c$ is the speed of light, $\beta = v/c,$ and $\beta_0$ is the cutoff below which the interaction between CRs and the gas decreases sharply.
