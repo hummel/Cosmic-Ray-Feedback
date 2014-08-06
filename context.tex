@@ -5,5 +5,11 @@
 \label{crb}
 Following \citet{StacyBromm2007}, we assume cosmic rays in the early universe are produced in supernova shock waves, resulting in a differential CR energy spectrum of the form
 \begin{equation}
-\frac{dn_{\rm \tiny CR}}{d\epsilon} = \frac{n_{\rm \tiny norm}{{\rm ln}\,\epsilon_{\rm max}{\large /}\epsilon_{\rm min}}.
+    \frac{{\rm d}n_{\rm \small CR}}{{\rm d}\epsilon} = \frac{n_{\rm norm}}{\epsilon_{\rm min}}
+    \left( \frac{\epsilon}{\epsilon_{\rm min}} \right)^{-2},
 \end{equation}
+where $n_{\rm \small CR}$ is the CR number density, $\epsilon$ is the kinetic energy of the CR, $\epsilon_{\rm min}$ is the low-energy cutoff of the CR spectrum, and $n_{\rm norm}$ is a normalizing density factor.  Noting that 
+\begin{equation}
+u_{\rm \small CR} = \int_{\epsilon_{\rm min}}^{\epsilon_{\rm max}} \epsilon \frac{{\rm d}n_{\rm \small CR}}{{\rm d}\epsilon} {\rm d}\epsilon, 
+\end{equation}
+where $u_{\rm \small CR}$ is the total CR energy density per unit volume, 
