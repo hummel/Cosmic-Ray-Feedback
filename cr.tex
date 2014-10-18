@@ -1,0 +1,218 @@
+\documentclass[useAMS,usenatbib]{mn2e}
+\usepackage{subfigure}
+%\usepackage{amssymb,amsmath}
+\usepackage{graphicx, amssymb}
+\usepackage[fleqn]{amsmath}
+%\usepackage{epsfig}
+%\usepackage{amsmath,natbib, appendix}
+%\usepackage{appendix}
+%\usepackage{longtable}
+
+
+\title[First stars under cosmic ray feedback]{The First Stars: formation under cosmic ray feedback}
+
+
+
+\author[J.~A. Hummel et al.]
+{Jacob~A.~Hummel$^1$\thanks{E-mail: jhummel@astro.as.utexas.edu},
+  Athena~Stacy$^2$, Milo\v s~Milosavljevi\'c$^1$ and Volker~Bromm$^1$\\
+$^1$Department of Astronomy, The University of Texas at Austin, TX 78712, USA\\
+$^2$University of California, Berkeley, CA 94720, USA
+ }
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%% Commands
+%%%%%%%%%%%%%%%%%%%%%%%
+%Units
+\newcommand{\kelvin}{\,{\rm K}}
+\newcommand{\s}{\,{\rm s}}
+\newcommand{\grams}{\,{\rm g}}
+\newcommand{\cm}{\,{\rm cm}}
+\newcommand{\cc}{\,{\rm cm}^{-3}}
+\newcommand{\msun}{\,{\rm M}_{\odot}}
+\newcommand{\rsun}{\,{\rm R}_{\odot}}
+\newcommand{\zsun}{\,{\rm Z}_{\odot}}
+\newcommand{\kms}{\,\mathrm{km}\,\mathrm{s}^{-1}}
+\newcommand{\pc}{\,{\rm pc}}
+\newcommand{\au}{\,{\rm AU}}
+\newcommand{\Mpc}{\,{\rm Mpc}}
+\newcommand{\yrs}{\,{\rm yrs}}
+\newcommand{\yr}{\,{\rm yr}}
+\newcommand{\myr}{\,{\rm Myr}}
+\newcommand{\ev}{\,{\rm eV}}
+\newcommand{\kev}{\,{\rm keV}}
+\newcommand{\erg}{\,{\rm erg}}
+\newcommand{\sr}{\,{\rm sr}}
+\newcommand{\Hz}{\,{\rm Hz}}
+%Constants
+\newcommand{\kb}{k_{\mathrm{B}}}
+\newcommand{\mh}{m_{\mathrm{H}}}
+%Special values
+\newcommand{\tcmb}{{T}_{\mathrm{CMB}}}
+\newcommand{\tff}{{t}_{\mathrm{ff}}}
+\newcommand{\tH}{{t}_{\textsc{h}}}
+\newcommand{\zcrit}{{Z}_{\mathrm{crit}}}
+\newcommand{\ncrit}{{n}_\mathrm{crit}}
+\newcommand{\tvir}{{T}_{\mathrm{vir}}}
+\newcommand{\rvir}{{R}_{\mathrm{vir}}}
+\newcommand{\mvir}{{M}_{\mathrm{vir}}}
+\newcommand{\rta}{{R}_{\mathrm{ta}}}
+\newcommand{\cs}{{c}_{\mathrm{s}}}
+%Chemistry
+\newcommand{\htwo}{\mathrm{H}_2}
+\newcommand{\hd}{\mathrm{HD}}
+\newcommand{\deut}{\mathrm{D}}
+\newcommand{\h}{\mathrm{H}}
+\newcommand{\hplus}{\mathrm{H}^+}
+\newcommand{\hminus}{\mathrm{H}^-}
+\newcommand{\he}{\mathrm{He}}
+\newcommand{\heplus}{\mathrm{He}^+}
+\newcommand{\heminus}{\mathrm{He}^-}
+\newcommand{\HI}{\mathrm{H\,\textsc{i}}}
+\newcommand{\HeI}{\mathrm{He\,\textsc{i}}}
+\newcommand{\HeII}{\mathrm{He\,\textsc{ii}}}
+\newcommand{\abunde}{ x_{\mathrm{e}}}
+\newcommand{\abundhe}{ x_{\mathrm{He}}}
+\newcommand{\abundd}{ x_{\mathrm{D}}}
+\newcommand{\abundhd}{ x_{\mathrm{HD}}}
+\newcommand{\abundhtwo}{ x_{\mathrm{H}_2} }
+\newcommand{\abundhplus}{ x_{\mathrm{H}^+}}
+\newcommand{\abundi}{ x_i}
+%Energetics
+\newcommand{\etot}{{E}_{\mathrm{tot}}}
+\newcommand{\egrav}{{E}_{\mathrm{grav}}}
+\newcommand{\etherm}{{E}_{\mathrm{th}}}
+\newcommand{\ekin}{{E}_{\mathrm{kin}}}
+\newcommand{\erot}{{E}_{\mathrm{rot}}}
+\newcommand{\uxr}{{u}_{\textsc{xr}}}
+\newcommand{\uxrz}{{u}_{\textsc{xr}}(z)}
+\newcommand{\gxr}{\Gamma_{\textsc{xr}}}
+\newcommand{\gcrit}{\Gamma_{\textsc{xr}, \mathrm{crit}}}
+\newcommand{\gblowout}{\Gamma_{\textsc{xr}, \mathrm{blowout}}}
+%Radiation
+\newcommand{\lya}{\mathrm{Ly}\alpha}
+\newcommand{\jlw}{J_{\mathrm{LW},21}}
+\newcommand{\Lxr}{L_{\textsc{xr}}}
+\newcommand{\jxr}{J_{\textsc{xr}}}
+\newcommand{\jxrz}{J_{\textsc{xr}}(z)}
+\newcommand{\jxrvz}{J_{\nu, \textsc{xr}}(z)}
+\newcommand{\jcrit}{J_{\textsc{xr}, \mathrm{crit}}}
+\newcommand{\jblowout}{J_{\textsc{xr}, \mathrm{blowout}}}
+%Cooling
+\newcommand{\tcool}{t_{\mathrm{cool}}}
+\newcommand{\tcoolhtwo}{t_{\mathrm{cool,H}_2}}
+\newcommand{\tcoolhd}{t_{\mathrm{cool,HD}}}
+%Cosmology
+\newcommand{\omegab}{\Omega_{\mathrm{b}}}
+\newcommand{\omegal}{\Omega_{\Lambda}}
+\newcommand{\omegam}{\Omega_{\mathrm{m}}}
+\newcommand{\omegatot}{\mathbf\Omega_{\mathrm{tot}}}
+% Star Formation
+\newcommand{\sfr}{\Psi_{*}}
+\newcommand{\sfrz}{\Psi_{*}(z)}
+\newcommand{\xrb}{\textsc{hmxb}}
+%Computational
+\newcommand{\rsoft}{r_{\mathrm{soft}}}
+%Mathematics
+\newcommand{\curl}{\vec{\nabla}\times}  %curl, nabla times something
+\newcommand{\dive}{\vec{\nabla}\cdot}   %divergence, nabla dot something
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+%Latex 
+\newcommand{\RefTab}[1]{\mbox{Table~\ref{#1}}}                     
+\newcommand{\RefFig}[1]{\mbox{Figure~\ref{#1}}}                    
+\newcommand{\RefEq}[1]{\mbox{Eq.~(\ref{#1})}}                 
+\newcommand{\RefCh}[1]{\mbox{Chapter~\ref{#1}}}                  
+\newcommand{\RefSec}[1]{\mbox{Section~\ref{#1}}}                        
+\newcommand{\RefApp}[1]{\mbox{Appendix~\ref{#1}}}
+%Journals
+\newcommand{\apj}{ApJ}
+\newcommand{\mnras}{MNRAS}
+\newcommand{\araa}{ARA\&A}
+\newcommand{\apjs}{ApJS}
+\newcommand{\nat}{Nature}
+\newcommand{\apjl}{ApJ}
+\newcommand{\aap}{AAP}
+\newcommand{\ssr}{Space Sci. Rev.}
+\newcommand{\pre}{PRE}
+\newcommand{\pasp}{PASP}
+\newcommand{\physrep}{Phys. Rep.}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\label{firstpage}
+
+\maketitle
+\topmargin-1cm
+
+
+\begin{abstract}
+This is the abstract!
+\end{abstract}
+
+
+\begin{keywords}
+stars: formation --- stars: Population III --- cosmology: theory --- early Universe --- dark ages, first stars
+
+\end{keywords}
+
+
+\section{Introduction}
+\label{intro}
+
+The formation of the first stars marks a crucial turning point in cosmic history, signalling the end of the dark ages and initiating a significant increase in the complexity of cosmic evolution.  Understanding the formation of these so-called Population III (Pop III) stars is a crucial aspect of modern astrophysics and cosmology, as their emergence ushers in a fundamental transformation of the early universe \citep{BarkanaLoeb2001,Miralda-Escude2003,Brommetal2009,Loeb2010, Bromm2013}. The heavy elements forged in their cores and dispersed during the violent supernova explosions they produce initiated the chemical enrichment process (\citealt{MadauFerraraRees2001, MoriFerraraMadau2002, BrommYoshidaHernquist2003, Hegeretal2003, UmedaNomoto2003, TornatoreFerraraSchneider2007, Greifetal2007, Greifetal2010, WiseAbel2008, Maioetal2011}; recently reviewed in \citealt{KarlssonBrommHawthorn2013}), while the ionizing radiation and cosmic rays produced during their lives and subsequent deaths began the process of reionization \citep{Kitayamaetal2004, Sokasianetal2004, WhalenAbelNorman2004, AlvarezBrommShapiro2006, JohnsonGreifBromm2007, Robertsonetal2010}.  The extent to which the radiation and metal enrichment produced by the first stars influenced the intergalactic medium (IGM) and subsequent stellar generations, however, is largely determined by their mass.  The characteristic mass of Pop III stars determines their total luminosity and ionising radiation production \citep{Schaerer2002} as well as the specific details of the supernova explosions marking their demise \citep{Hegeretal2003, HegerWoosley2010, MaederMeynet2012}. As such, developing a thorough understanding of how the first stars are born, live, and die is crucial for developing a comprehensive picture of cosmic evolution.
+
+The basic picture of Pop III star formation has been reasonably well established, with the consensus that the first stars formed at $z\gtrsim20$ in dark matter `minihaloes' having on the order of $10^5 - 10^6\msun$ \citep{CouchmanRees1986, HaimanThoulLoeb1996, Tegmarketal1997}. While the complex physical processes at play in gas collapsing from IGM to protostellar densities have so far prevented a definitive answer to this question, a consensus that the Pop III initial mass function (IMF) was somewhat top-heavy with a characterisitic mass of $\sim$ a few $\times 10\msun$ is beginning to emerge \citep{Bromm2013}.  While pioneering numerical studies suggested that Pop III stars were very massive---on the order of $100\msun$---due to the lack of more efficient coolants than $\htwo$ \citep[e.g.,][]{BrommCoppiLarson1999, BrommCoppiLarson2002, AbelBryanNorman2002, Yoshidaetal2003, BrommLarson2004, Yoshidaetal2006, O'SheaNorman2007}, more recent simulations, aided by increased resolution, have found that significant fragmentation occurs during the star formation process, with protostellar cores ranging from $\sim$0.1 to tens of solar masses \citep{StacyGreifBromm2010, Clarketal2011a, Clarketal2011b, Greifetal2011, Greifetal2012, StacyBromm2013, Hiranoetal2014}.
+
+%\section{Cosmological Context}
+%\label{context}
+
+\section{The High-Redshift Cosmic Ray Background}
+\label{crb}
+
+\section{Numerical Methods}
+\label{methods}
+
+\subsection{Initial Setup}
+\label{setup}
+
+
+
+\subsection{Chemistry and Thermodynamics}
+\label{chemistry}
+
+
+
+\subsection{Cosmic Ray Ionisation and Heating}
+\label{CRchem}
+
+
+\subsection{Sink Particles}
+\label{sinkParticles}
+
+\section{Results}
+\label{results}
+
+\section{Summary and Conclusions}
+\label{conclusions}
+
+
+%\section*{Acknowledgments}
+%The authors acknowledge the Texas Advanced Computing Center (TACC) at The University of Texas at Austin for providing HPC resources that have contributed to the research results reported within this paper. This study was supported in part by NSF grants AST-0708795 and AST-1009928, by the NASA grants NNX08AL43G and NNX09AJ33G, and by support provided by the Texas Cosmology Center (TCC). This research has made use of NASA's Astrophysics Data System and Astropy, a community-developed core Python package for Astronomy \citep{Robitailleetal2013}.
+
+
+%\bsp
+
+\bibliography{../../references}
+%\bibliographystyle{mn2e}
+\bibliographystyle{mn2e_fixed}  
+
+\end{document}
