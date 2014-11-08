@@ -4,8 +4,8 @@ Our sink particle method is described in \citet{StacyGreifBromm2010}. When a gas
 \begin{equation}
 L_{\rm res} \simeq 0.5 \left( \frac{M_{\rm res}}{\rho_{\rm max}} \right)^{1/3},
 \end{equation}
-and $\rho_{\rm max} = n_{\rm max} m_{\rm H}$.  
+and $\rho_{\rm max} = n_{\rm max} m_{\rm H}$.  Upon creation, the sink immediately accretes the majority of the particles within its smoothing kernel, resulting in the initial mass of the sink particle $M_{\rm sink}$ being close to $M_{\rm res} \simeq 1\msun$.
 
-The sink thus immediately accretes the majority of the particles within its smoothing kernel, such that its mass $M_{\rm sink}$ is initially close to $M_{\rm res} \simeq 1\msun$. Once the sink is formed, additional gas particles and smaller sinks are accreted as they approach within $r_{\rm acc}$ of that sink particle.  After each accretion event, the position and momentum of the sink particle is set to the mass-weighted average of the sink and the accreted particle.
+ Once the sink is formed, additional gas particles and smaller sinks are accreted as they approach within $r_{\rm acc}$ of that sink particle.  After each accretion event, the position and momentum of the sink particle is set to the mass-weighted average of the sink and the accreted particle.
 
 Following the creation of a sink particle, its density, temperature and chemical abundances are no longer updated. The sink's density is held constant at $10^{12}\cc$, and its temperature is kept at 650\kelvin, typical for collapsing gas reaching this density; the pressure of the sink is set correspondingly. Assigning a temperature and pressure to the sink particle in this fashion allows it to behave as an SPH particle. This  avoids the creation of an artificial pressure vacuum, which would inflate the accretion rate onto the sink \citep[see][]{BrommCoppiLarson2002, MartelEvansShapiro2006}. The sink's position and momentum continue to evolve through gravitational and, initially, hydrodynamical interactions with the surrounding particles. As it gains mass and gravity becomes the dominant force, the sink behaves less like an SPH particle and more like a non-gaseous $N$-body particle.
