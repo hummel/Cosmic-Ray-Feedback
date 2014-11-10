@@ -1,6 +1,23 @@
 \subsection{Column Density Estimation}
 Each time a CR proton ionises a $H$ atom, an electron with average energy $\langle E \rangle = 35\ev$ is produced \citep{SpitzerTomasko1968}.  Including the ionization energy of $13.6\ev$, the CR proton loses approximately $50\ev$ per scattering. This necessarily places a limit on how many scatterings a CR proton can undergo before losing all its energy to ionisation, as well as limiting the distance it may travel.  This distance may be described by a penetration depth 
 \begin{equation}
-D_p(n, \epsilon) \approx \frac{\beta c \epsilon} {-({\rm d}\epsilon / {\rm d}t)_{\rm ion}}
+    D_p(n, \epsilon) \approx \frac{\beta c \epsilon} {-({\rm d}\epsilon / {\rm d}t)_{\rm ion}}
 \end{equation}
 where \citep{Schlickeiser2002}
+\begin{equation}
+    - \left( \frac{{\rm d}\epsilon} {{\rm d}t} \right)_{\rm ion}(n, \epsilon)
+    = 1.82\times10^{-7}\,{\rm \small eV\,s}^{-1} f(\epsilon),
+\end{equation}
+\begin{equation}    
+    f(\epsilon) = (1 + 0.0185 \,{\rm ln}\beta )\, \frac{2 \beta^2}{\beta_0^3 + 2 \beta^3}
+\end{equation}
+and 
+\begin{equation}
+    \beta =  \sqrt{1 - \left( \frac{\epsilon}{m_{\rm \tiny H}c^2}+1 \right)^{-2}}.
+\end{equation}
+Here, $m_{\rm \small H}$ is the mass of hydrogen, $c$ is the speed of light, $\beta = v/c$ and $({\rm d}\epsilon / {\rm d}t)_{\rm ion}$ is the rate at which a CR proton loses energy to ionisation. $\beta_0$ is the cutoff below which the interaction between CRs and the gas decreases sharply; we use $\beta_0=0.01$, appropriate for CRs traveling through a neutral IGM \citep{StacyBromm2007}.
+
+As $D_p(n, \epsilon)$ is the inverse of the mean free path of CRs of energy $\epsilon$ traveling through a gas with number density $n$, we may define an effective cross-section $\sigma_{CR}(n,\epsilon)$ for the interaction
+\begin{equation}
+\sigma_{CR}(n,\epsilon) = \frac{1}{n D_p(n, \epsilon)}.
+\end{equation}
