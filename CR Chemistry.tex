@@ -1,14 +1,16 @@
 \subsection{Cosmic Ray Ionisation and Heating}
 \label{CRchem}
-Over the length scale of our simulation box, the IGM is optically thin to cosmic rays above $10^6\ev$. This allows us to implement a uniform CR background as discussed in \RefSec{context} by assuming attenuation of the incident radiation while penetrating the minihalo is negligible, such that the ionisation rate coefficient $k_{\rm \small CR}$ for atomic hydrogen \citep{Schlickeiser2002} can be written as
+To study the impact of an ionising CR background on primordial star formation, we implement a uniform CR background as discussed in \RefSec{crb}. Accounting for attenuation of the CRB as discussed in \RefSec{attenuation}, the heating rate $\Gamma_{\rm \small CR}$ is given by
+\begin{equation}
+\Gamma_{\rm \small CR} = n_{\rm \small H} E_{\rm \small heat} k_{\rm \small CR}.
+\end{equation}
+where $n_{\rm \small H}$ is the number density of hydrogen and $E_{\rm \small heat}$ is the energy deposited as heat per interaction.
+
+, such that the ionisation rate coefficient $k_{\rm \small CR}$ for atomic hydrogen \citep{Schlickeiser2002} can be written as
 \begin{equation}
 k_{\rm \small CR} = \frac{1.82\times10^{-7}\,{\rm \small eV\,s}^{-1}}{50\,{\rm \small eV}} 
     \int_{\epsilon_{\rm min}}^{\epsilon_{\rm max}} f(\epsilon) \frac{dn_{\rm \tiny CR}}{d\epsilon} d\epsilon,
 \end{equation}
 where $\epsilon_{\rm min} = 10^6\ev$, $\epsilon_{\rm max}= 10^{15}\ev$.
 
-While CRs lose about $50\ev$ per interaction, only about $6\ev$ of that goes towards heating in a neutral medium \citep{SpitzerScott1969, ShullvanSteenberg1985}, such that the heating rate $\Gamma_{\rm \small CR}$ is given by
-\begin{equation}
-\Gamma_{\rm \small CR} = n_{\rm \small H} E_{\rm \small heat} k_{\rm \small CR}.
-\end{equation}
-where $n_{\rm \small H}$ is the number density of hydrogen and $E_{\rm \small heat}$ is the energy deposited as heat per interaction.
+While CRs lose about $50\ev$ per interaction, only about $6\ev$ of that goes towards heating in a neutral medium \citep{SpitzerScott1969, ShullvanSteenberg1985}, such that the heating rate 
