@@ -10,4 +10,5 @@ figures/col_density_fit1/col_density_fit1.png
 CR Chemistry.tex
 Sink Particles.tex
 results.tex
+figures/temp/temp.png
 conclusions.tex
