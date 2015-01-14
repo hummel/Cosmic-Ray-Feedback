@@ -11,4 +11,5 @@ Ionisation and Heating.tex
 Sink Particles.tex
 Results: Initial Collapse.tex
 figures/temp/temp.png
+figures/structure-vanilla_t1/structure-vanilla_t1.png
 conclusions.tex
