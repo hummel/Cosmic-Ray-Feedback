@@ -1,7 +1,7 @@
 abstract.tex
 keywords.tex
 Introduction.tex
-context.tex
+Cosmological Context.tex
 Methods.tex
 chemistry.tex
 attenuation.tex
