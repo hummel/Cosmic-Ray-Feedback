@@ -1,4 +1,5 @@
-abstract.tex
+
+figures/structure-vanilla_t0/structure-vanilla_t0.pngabstract.tex
 keywords.tex
 Introduction.tex
 Cosmological Context.tex
