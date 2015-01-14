@@ -10,5 +10,6 @@ figures/col_density_fit/col_density_fit.png
 CR Chemistry.tex
 Sink Particles.tex
 Results: Initial Collapse.tex
+CR Chemistry1.tex
 figures/temp/temp.png
 conclusions.tex
