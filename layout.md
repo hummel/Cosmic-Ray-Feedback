@@ -2,7 +2,7 @@ abstract.tex
 keywords.tex
 Introduction.tex
 Cosmological Context.tex
-Methods.tex
+Numerical Methods.tex
 chemistry.tex
 attenuation.tex
 figures/column_density/column_density.png
