@@ -12,4 +12,5 @@ Sink Particles.tex
 Results: Initial Collapse.tex
 figures/temp/temp.png
 figures/structure-vanilla_t1/structure-vanilla_t1.png
+figures/structure-cr05_t0/structure-cr05_t0.png
 conclusions.tex
