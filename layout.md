@@ -17,3 +17,4 @@ Sink Formation.tex
 figures/sinkgrowth/sinkgrowth.png
 figures/sink_masses/sink_masses.png
 conclusions.tex
+figures/u_cr/u_cr.png
