@@ -14,4 +14,5 @@ figures/temp/temp.png
 figures/binned/binned.png
 figures/collapse/collapse.png
 Sink Formation.tex
+figures/sinkgrowth/sinkgrowth.png
 conclusions.tex
