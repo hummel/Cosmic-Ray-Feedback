@@ -13,4 +13,5 @@ figures/structure-cr05_t0/structure-cr05_t0.png
 figures/temp/temp.png
 figures/binned/binned.png
 figures/collapse/collapse.png
+Sink Formation.tex
 conclusions.tex
