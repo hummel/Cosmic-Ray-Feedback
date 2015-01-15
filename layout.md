@@ -15,4 +15,5 @@ figures/binned/binned.png
 figures/collapse/collapse.png
 Sink Formation.tex
 figures/sinkgrowth/sinkgrowth.png
+figures/sink_masses/sink_masses.png
 conclusions.tex
