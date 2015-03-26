@@ -27,8 +27,7 @@ This in turn allows us to define an optical depth
 \end{equation}
 where $N$ is the gas column density.
 
-In order to estimate $N$, we calculate the column density approaching the center of the accretion disk along both polar and equatorial lines of sight. As shown in Figure \ref{fig:column_density}, the colum density remains essentially constant for the duration of the simulation, and is nearly linear in log-space over several orders of magnitude up to the resolution limit of our simulation
-($\sim100\au$). This same linear behaviour can be seen versus density as well, as shown in Figure \ref{fig:ncol_fit}. In addition we notice that for a given gas density, the column density along the pole is roughly a factor of 10 lower than along the equator.  Performing an ordinary least squares fit to the combined data from several snapshots for $n > 10^4\cc$, we find that the column density along the pole and equator is well fit by 
+We estimate $N$ using the same technique described in \citep{Hummeletal2015}, where the column density along the pole and equator is well fit by 
 \begin{equation}
 {\rm log}_{10}(N_{\rm \small pole}) = 0.5323\, {\rm log_{10}}(n) + 19.64
 \end{equation}
@@ -36,9 +35,7 @@ and
 \begin{equation}
 {\rm log}_{10}(N_{\rm \small equator}) = 0.6262\, {\rm log_{10}}(n) + 19.57, 
 \end{equation}
-respectively.
-
-To account for this difference in optical depth, we assume every line of sight within 45 degrees of the pole experiences column density $N_{\rm \small pole}$ and every other line of sight experiences $N_{\rm \small equator}$ \citep{Hosokawaetal2011}. This allows us to calculate an effective optical depth
+respectively, assuming every line of sight within 45 degrees of the pole experiences column density $N_{\rm \small pole}$ while every other line of sight experiences $N_{\rm \small equator}$ \citep{Hosokawaetal2011}. This allows us to calculate an effective optical depth
 \begin{equation}
 N_{\rm \small eff}(n) = N_{\rm \small pole}(n) \frac{2 \Omega_{\rm \small pole}}{4\pi} + N_{\rm \small equator}(n) \frac{4\pi - 2 \Omega_{\rm \small pole}}{4\pi},
 \end{equation}
