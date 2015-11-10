@@ -1,6 +1,7 @@
 keywords.tex
 Introduction.tex
 Cosmological Context.tex
+figures/u_cr/u_cr.png
 Numerical Methods: Setup.tex
 Cut-out.tex
 chemistry.tex
@@ -17,4 +18,3 @@ Sink Formation.tex
 figures/sinkgrowth/sinkgrowth.png
 figures/sink_masses/sink_masses.png
 conclusions.tex
-figures/u_cr/u_cr.png
