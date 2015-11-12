@@ -1,19 +1,22 @@
 \section{Cosmic Rays in the Early Universe}
 \label{sec:context}
-While there are several possible sources of CRs at high redshifts including primordial black holes, topological defects, supermassive particles, and structure formation shocks, the most likely source of CRs in the early universe is supernova (SN) explosions \citep[e.g.,][]{GinzburgSyrovatskii1969,BiermannSigl2001,Stanev2004,Pfrommeretal2006}, wherein CRs are accelerated by the SN shock wave via the first-order Fermi process.  In this scenario, high-energy particles diffuse back and forth across the shock wave, increasing their energy by a small percentage each time, and resulting in a differential spectrum of CR number density per energy \citep{Longair1994}. 
+While there are several possible sources of CRs at high redshifts including primordial black holes, topological defects, supermassive particles, and structure formation shocks, the most likely source of CRs in the early universe is supernova (SN) explosions \citep[e.g.,][]{GinzburgSyrovatskii1969,BiermannSigl2001,Stanev2004,Pfrommeretal2006}, wherein CRs are accelerated by the SN shock wave via the first-order Fermi process.  The mass fraction of Pop III stars dying as SNe depends strongly on their IMF, and while the complex physical processes at play in gas collapsing from IGM to protostellar densities have so far prevented a definitive answer to this question, the emerging consensus is that the Pop III IMF was somewhat top-heavy with a characterisitic mass of $\sim$ a few $\times 10\msun$ \citep{Bromm2013}.  Given this, we assume that one SN is produced for every $50\msun$ of stars formed.  In addition, we assume that each SN-producing star dies quickly as a core-collapse SN with $E_{\rm \small SN} = 10^{51}\erg$, 10 percent of which goes into CR production \citep[e.g.,][]{Ruderman1974}. This allows us to estimate the total energy density $u_{\rm \small CR}$ in cosmic rays:
+\begin{equation}
+u_{\rm \small CR}(z) = f_{\rm \small CR} E_{\rm \small SN}\, f_{\rm \small SN} \Psi_{*}(z)\, t_{\rm \small H}(z) (1+z)^3,
+\end{equation}
+where $f_{\rm \small CR}$ is the fraction of the SN explosion energy $E_{\rm \small SN}$ going into CR production, $f_{\rm \small SN}$ is the mass fraction of stars formed which die as SNe, and $\Psi_{*}(z)$ is the comoving star formation rate density (SFRD) as a function of redshift.  The Hubble time $t_{\rm \small H}$ accounts for the time CRs have had to propagate through the universe since their creation, and the factor of $(1+z)^3$ accounts for the conversion from a comoving SFRD to a physical energy density. As in \citet{Hummeletal2015}, we base our estimate of $u_{\rm \small CR}(z)$ on the Pop III SFRD calculated by \citet{GreifBromm2006}, but see \citet{Campisietal2011} for a more recent calculation.
+
+
+In this scenario, high-energy particles diffuse back and forth across the shock wave, increasing their energy by a small percentage each time, and resulting in a differential spectrum of CR number density per energy \citep{Longair1994}. 
 
 Following \citet{StacyBromm2007}, we assume cosmic rays in the early universe are produced in supernova shock waves, resulting in a differential CR energy spectrum of the form
 \begin{equation}
     \frac{{\rm d}n_{\rm \small CR}}{{\rm d}\epsilon} = \frac{n_{\rm norm}}{\epsilon_{\rm min}}
     \left( \frac{\epsilon}{\epsilon_{\rm min}} \right)^{-2},
 \end{equation}
-where $n_{\rm \small CR}$ is the CR number density, $\epsilon$ is the kinetic energy of the CR, $\epsilon_{\rm min}$ is the low-energy cutoff of the CR spectrum, and $n_{\rm norm}$ is a normalizing density factor. Integrating this over all energies yields the total energy density $u_{\rm \small CR}$ in cosmic rays, which we estimate as follows:
-\begin{equation}
-u_{\rm \small CR}(z) = f_{\rm \small CR} E_{\rm \small SN}\, f_{\rm \small SN} \Psi_{*}(z)\, t_{\rm \small H}(z) (1+z)^3,
-\end{equation}
-where $f_{\rm \small CR}$ is the fraction of the SN explosion energy $E_{\rm \small SN}$ going into CR production, $f_{\rm \small SN}$ is the mass fraction of stars formed which die as SNe, and $\Psi_{*}(z)$ is the comoving star formation rate density (SFRD) as a function of redshift.  The Hubble time $t_{\rm \small H}$ accounts for the time CRs have had to propagate through the universe since their creation, and the factor of $(1+z)^3$ accounts for the conversion from a comoving SFRD to a physical energy density. As in \citet{Hummeletal2015}, we base our estimate of $u_{\rm \small CR}(z)$ on the Pop III SFRD calculated by \citet{GreifBromm2006}, but see \citet{Campisietal2011} for a more recent calculation.
+where $n_{\rm \small CR}$ is the CR number density, $\epsilon$ is the kinetic energy of the CR, $\epsilon_{\rm min}$ is the low-energy cutoff of the CR spectrum, and $n_{\rm norm}$ is a normalizing density factor. Integrating this over all energies yields 
 
- The mass fraction of Pop III stars dying as SNe depends strongly on their IMF, and while the complex physical processes at play in gas collapsing from IGM to protostellar densities have so far prevented a definitive answer to this question, the emerging consensus is that the Pop III IMF was somewhat top-heavy with a characterisitic mass of $\sim$ a few $\times 10\msun$ \citep{Bromm2013}.  Given this, we assume that one SN is produced for every $50\msun$ of stars formed.  In addition, we assume that each SN-producing star dies quickly as a core-collapse SN with $E_{\rm \small SN} = 10^{51}\erg$, 10 percent of which goes into CR production \citep[e.g.,][]{Ruderman1974}.
+ 
  
  This results in a CR energy spectrum increasing over cosmic time in the following fashion:
  \begin{equation}
