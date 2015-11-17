@@ -9,7 +9,13 @@ where $n_{\rm \small CR}$ is the CR number density, $\epsilon$ is the kinetic en
 
 The value of $\epsilon_{\rm min}$ is crucial, as the ionisation cross-section of non-relativistic CRs varies rougly as $\epsilon^{-1}$ for $\epsilon \lesssim 10^5\ev$. Higher energy CRs thus travel much farther between interactions and are less able to effectively deposit their energy into the gas, sugh that the low-energy end of the CR spectrum provides the majority of the ionisation and heating.  While estimates of the lowest possible energy CR protons could gain in a SN shock wave vary significantly, below $10^5\ev$ the velocity of the CR drops below the approximate orbital velocity of electrons in the ground state of atomic hydrogen, and the interaction cross-section dimishes rapidly \citep{Schlickeiser2002}. We therefore employ $\epsilon_{\rm min} = 10^6\ev$ as the lower bound for the CR background in our simulations.  While CRs with energies below $10^6\ev$ may account for $\sim$$5-50$ percent of the CR energy budget, they also deposit a substantial fraction of their energy into the IGM \citep{SazonovSunyaev2015}. Consequently, they are unable to efficiently contribute to the build-up of a large-scale CR background. This neglects the contribution $\epsilon < 10^6\ev$ CRs make to the ionisation and heating of primordial gas; however, the impact is minor, as show by \citet{StacyBromm2007}. Using one-zone models, they found that extending the CR spectrum to as low as $\epsilon_{\rm min} = 10^3\ev$ altered the resulting ionisation and heating rates by less than a factor of two.  It should also be noted that the uncertainty in $\epsilon_{\rm min}$ is on par with that for the fraction of the SN energy going into CR production, $f_{\rm \small CR}$, which is expected to be $\sim$$10-20$ percent \citep{CaprioliSpitkovsky2014}.  Here we assume $f_{\rm \small CR} = 0.1$.
 
-Integrating this over all energies yields the total energy density $u_{\rm \small CR}$ in cosmic rays, which we estimate as follows:
+Integrating the differential CR spectrum over all energies yields the total energy density $u_{\rm \small CR}$ in cosmic rays which, coupled with a redshift-dependent estimate of $\ucr$,
+
+ This results in a CR energy spectrum increasing over cosmic time in the following fashion:
+ \begin{equation}
+ \frac{{\rm d}n_{\rm \small CR}}{{\rm d}\epsilon}(z) = \frac{u_{\rm \small CR}(z)}{{\rm ln}\,\epsilon_{\rm max}{\large /}\epsilon_{\rm min}}  \epsilon^{-2}.
+ \end{equation}
+which we estimate as follows:
 \begin{equation}
 u_{\rm \small CR}(z) = f_{\rm \small CR} E_{\rm \small SN}\, f_{\rm \small SN} \Psi_{*}(z)\, t_{\rm \small H}(z) (1+z)^3,
 \end{equation}
