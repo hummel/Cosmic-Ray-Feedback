@@ -11,15 +11,18 @@ The value of $\epsilon_{\rm min}$ is crucial, as the ionisation cross-section of
 
 We therefore employ $\epsilon_{\rm min} = 10^6\ev$ as the lower bound for the CR background in our simulations.  While CRs with energies below $10^6\ev$ may account for $\sim$$5-50$ percent of the CR energy budget, they also deposit a substantial fraction of their energy into the IGM \citep{SazonovSunyaev2015}. Consequently, they are unable to efficiently contribute to the build-up of a large-scale CR background. We thus neglect the contribution such CRs make to the ionisation and heating of primordial gas; however, the impact is minor, as shown by \citet{StacyBromm2007}. Using one-zone models, they found that extending the CR spectrum to as low as $\epsilon_{\rm min} = 10^3\ev$ altered the resulting ionisation and heating rates by less than a factor of two.  It should also be noted that the uncertainty in $\epsilon_{\rm min}$ is on par with that for the fraction of the SN energy going into CR production, $f_{\rm \small CR}$, which is expected to be $\sim$$10-20$ percent \citep{CaprioliSpitkovsky2014}.  Here we assume $f_{\rm \small CR} = 0.1$.
 
-The upper limit of the CR energy spectrum $\epsilon_{\rm max}$ depends on the strength of the ambient magnetic field, as the Fermi acceleration process is linearly dependent on the magnetic field through which the SN shock wave propagates. While the strength, generation mechanism, and distribution of magnetic fields in the early Universe remain highly uncertain \citep{DurrerNeronov2013}, recent observations have placed lower bounds on the modern-day intergalactic magnetic field strength ranging from $10^{-18}\,$G \citep{Dermeretal2011} to $3\times10^{-16}\,$G \citep{NeronovVovk2010}, while other estimates place the field strength as high as $10^{-15}\,$G \citep{AndoKusenko2010}.  Simply accounting for flux freezing, the magnetic field at redshift $z$ is given by
+The upper limit of the CR energy spectrum $\epsilon_{\rm max}$ depends on the strength of the ambient magnetic field in the local ISM, as the Fermi acceleration process is linearly dependent on the magnetic field through which the SN shock wave propagates. As the strength, generation mechanism, and distribution of magnetic fields in the early Universe remain highly uncertain \citep{DurrerNeronov2013}, we set $\epsilon_{\rm max} = 10^{15}\ev$.  So long as $\epsilon_{\rm max}$ is below the GZK cutoff $\epsilon_{\rm \small GZK}$ at that redshift, given by \citep{StacyBromm2007}
+\begin{equation}
+\epsilon_{\rm \small GZK}(z) = \frac{5\times10^{19}\ev}{1+z},
+\end{equation}
+the precise value of $\epsilon_{\rm max}$ is not crucial, since the great majority of the heating and ionisation is provided by CRs near $\epsilon_{\rm min}$.
+
+
+recent observations have placed lower bounds on the modern-day intergalactic magnetic field strength ranging from $10^{-18}\,$G \citep{Dermeretal2011} to $3\times10^{-16}\,$G \citep{NeronovVovk2010}, while other estimates place the field strength as high as $10^{-15}\,$G \citep{AndoKusenko2010}.  Simply accounting for flux freezing, the magnetic field at redshift $z$ is given by
 \begin{equation}
 B(z) = B_0 (1+z)^2
 \end{equation}
-where $B_0$ is the magnetic field at the current epoch. The magnetic field strength in the IGM at $z=20$ then was likely in the range $4\times10^{-16}$ to $4\times10^{-13}\,$G.  Flux freezing and dynamo effects during minihalo collapse and subsequent star formation may then drive the local magnetic field a few orders of magnitude higher.  With this in mind we set $\epsilon_{\rm max} = 10^{15}\ev$.  So long as $\epsilon_{\rm max}$ is below the GZK cutoff $\epsilon_{\rm \small GZK}$ at that redshift, given by \citep{StacyBromm2007}
-\begin{equation}
-\epsilon_{\rm \small GZK} = \frac{5\times10^{19}\ev}{1+z},
-\end{equation}
-the precise value of $\epsilon_{\rm max}$ is not crucial, since the great majority of the heating and ionisation is provided by CRs near $\epsilon_{\rm min}$.
+where $B_0$ is the magnetic field at the current epoch. The magnetic field strength in the IGM at $z=20$ then was likely in the range $4\times10^{-16}$ to $4\times10^{-13}\,$G.  Flux freezing and dynamo effects during minihalo collapse and subsequent star formation may then drive the local magnetic field a few orders of magnitude higher.
 
 Magnetic fields also play an important role in isotropising the CR background.  We may estimate the effective mean free path over which a CR may freely propagate before being significantly impacted by the presence of a magnetic field $B$ using the Larmor radius $r_L$, where for a proton, 
 \begin{equation}
