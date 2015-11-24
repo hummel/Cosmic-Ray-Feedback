@@ -5,7 +5,7 @@ figures/u_cr/u_cr.png
 Numerical Methods: Setup.tex
 Cut-out.tex
 chemistry.tex
-attenuation.tex
+CR Heating and Ionisation.tex
 Ionisation and Heating.tex
 Sink Particles.tex
 Results: Initial Collapse.tex
