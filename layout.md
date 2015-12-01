@@ -7,6 +7,7 @@ Cut-out.tex
 chemistry.tex
 Attenuation.tex
 Ionisation and Heating.tex
+figures/khrates/khrates.png
 Sink Particles.tex
 Results: Initial Collapse.tex
 figures/structure-vanilla_t0/structure-vanilla_t0.png
