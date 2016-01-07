@@ -11,7 +11,6 @@ figures/khrates/khrates.png
 Sink Particles.tex
 Results: Initial Collapse.tex
 figures/structure-vanilla_t0/structure-vanilla_t0.png
-figures/structure-cr05_t0/structure-cr05_t0.png
 figures/temp/temp.png
 figures/binned/binned.png
 figures/collapse/collapse.png
