@@ -9,10 +9,10 @@ Attenuation.tex
 Ionisation and Heating.tex
 figures/khrates/khrates.png
 Sink Particles.tex
-Results: Initial Collapse.tex
-figures/structure/structure.png
 figures/temp/temp.png
 figures/temp/temp_halo2.png
+Results: Initial Collapse.tex
+figures/structure/structure.png
 figures/binned/binned.png
 figures/collapse/collapse.png
 Sink Formation.tex
