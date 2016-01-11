@@ -15,7 +15,6 @@ Results: Initial Collapse.tex
 figures/binned_T_efrac/binned_T_efrac.png
 figures/structure/structure.png
 subsubsection_Expedited_Collapse_Minihalo_collapse__.tex
-figures/binned/binned.png
 figures/collapse/collapse.png
 Sink Formation.tex
 figures/sinkgrowth/sinkgrowth.png
