@@ -13,7 +13,7 @@ figures/temp/temp.png
 figures/temp/temp_halo2.png
 Results: Initial Collapse.tex
 figures/binned_T_efrac/binned_T_efrac.png
-subsubsection_Expedited_Collapse_The_CR__.tex
+Expedited Collapse.tex
 figures/collapse/collapse.png
 figures/structure/structure.png
 Sink Formation.tex
