@@ -17,6 +17,5 @@ Expedited Collapse.tex
 figures/collapse/collapse.png
 figures/structure/structure.png
 Sink Formation.tex
-figures/sinkgrowth/sinkgrowth.png
 figures/binned_T_Mbe/binned_T_Mbe.png
 conclusions.tex
