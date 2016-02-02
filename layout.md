@@ -18,6 +18,8 @@ figures/collapse/collapse.png
 figures/structure/structure.png
 Sink Formation.tex
 figures/sink_masses_halo1/sink_masses_halo1.png
+figures/sink_masses_halo1/sink_masses_halo2.png
+
 Characteristic Mass.tex
 figures/disks/disks.png
 figures/binned_T_Mbe/binned_T_Mbe.png
