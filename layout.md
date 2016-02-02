@@ -17,8 +17,8 @@ Expedited Collapse.tex
 figures/collapse/collapse.png
 figures/structure/structure.png
 figures/sink_masses/sink_masses_halo1.png
-Sink Formation.tex
 figures/sink_masses/sink_masses_halo2.png
+Sink Formation.tex
 Characteristic Mass.tex
 figures/disks/disks.png
 figures/binned_T_Mbe/binned_T_Mbe.png
