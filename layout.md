@@ -8,9 +8,9 @@ chemistry.tex
 Attenuation.tex
 Ionisation and Heating.tex
 figures/khrates/khrates.png
-Sink Particles.tex
 figures/temp/temp.png
 figures/temp/temp_halo2.png
+Sink Particles.tex
 Results: Initial Collapse.tex
 figures/binned_T_efrac/binned_T_efrac.png
 Expedited Collapse.tex
