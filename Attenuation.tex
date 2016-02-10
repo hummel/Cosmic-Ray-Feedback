@@ -27,7 +27,8 @@ As $D_p(n, \epsilon)$ is the mean free path of CRs of energy $\epsilon$ travelin
 \sigma_{CR}(n,\epsilon) = \frac{1}{n D_p(n, \epsilon)}.
 \end{equation}
 
-As the CR penetration depth is $\gg$ than the box size everywhere except approaching the centre of the star-forming minihalo, we may estimate the column density $N$---and thus, the CR attenuation along a given line of sight---using the same technique described in \citet{Hummeletal2015}, where the column density along the pole and equator is well fit by 
+As the CR penetration depth is $\gg$ than the box size everywhere except approaching the centre of the star-forming minihalo, we may estimate the column density $N$---and thus, the CR attenuation along a given line of sight---using the same technique described in \citet{Hummeletal2015}. 
+The gas column density approaching the centre of the accretion disk varies by roughly an order of magnitude between a polar ($N_{\rm \small pole}$) and equatorial ( $N_{\rm equator}$) approach, with the column density  along these lines of sight well fit by
 \begin{equation}
 {\rm log}_{10}(N_{\rm \small pole}) = 0.5323\, {\rm log_{10}}(n) + 19.64
 \end{equation}
@@ -35,8 +36,7 @@ and
 \begin{equation}
 {\rm log}_{10}(N_{\rm \small equator}) = 0.6262\, {\rm log_{10}}(n) + 19.57, 
 \end{equation}
-respectively, assuming every line of sight within 45 degrees of the pole experiences column density $N_{\rm \small pole}$ while every other line of sight experiences $N_{\rm \small equator}$ \citep{Hosokawaetal2011}. 
-This allows us to calculate an effective optical depth such that
+respectively. We assume every line of sight within 45 degrees of the pole experiences column density $N_{\rm \small pole}$ while every other line of sight experiences $N_{\rm \small equator}$ \citep{Hosokawaetal2011}, allowing us to calculate an effective optical depth such that
 \begin{equation}
 e^{-\tau_{\rm \small CR}} = \frac{2 \Omega_{\rm \small pole}}{4\pi} e^{-\sigma_{\rm \small CR} N_{\rm \small pole}} + \frac{4\pi - 2 \Omega_{\rm \small pole}}{4\pi} e^{-\sigma_{\rm \small CR} N_{\rm \small eq}},
 \end{equation}
@@ -44,15 +44,3 @@ where
 \begin{equation}
 \Omega_{\rm \small pole} = \int_0^{2\pi}{\rm d}\phi \int_0^{\pi/4}{\rm sin}\theta \,{\rm d}\theta = 1.84\,{\rm sr}.
 \end{equation}
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
