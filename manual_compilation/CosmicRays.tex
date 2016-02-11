@@ -1,4 +1,3 @@
-%\documentclass[referee,usenatbib]{mn2e}
 \documentclass[usenatbib]{mn2e}
 
 \usepackage{graphicx}
@@ -210,7 +209,7 @@ Finally, our conclusions are gathered in Section \ref{conclusions}. Throughout t
 
 \section{Cosmic Rays in the Early Universe}
 \label{sec:context}
-While there are several possible sources of CRs at high redshifts including primordial black holes, topological defects, supermassive particles, and structure formation shocks, the most likely source of CRs in the early Universe is supernova (SN) explosions \citep[e.g.,][]{GinzburgSyrovatskii1969,BiermannSigl2001,Stanev2004,Pfrommeretal2006}, wherein CRs are accelerated by the SN shock wave via the first-order Fermi process.  
+While there are several possible sources of CRs at high redshifts including primordial black holes, topological defects, supermassive particles, and structure formation shocks, the most likely source in the early Universe is supernova (SN) explosions \citep[e.g.,][]{GinzburgSyrovatskii1969,BiermannSigl2001,Stanev2004,Pfrommeretal2006}, wherein CRs are accelerated by the SN shock wave via the first-order Fermi process.  
 In this scenario, high-energy particles diffuse back and forth across the shock front, increasing their energy by a small percentage each time, and resulting in a differential spectrum of CR number density per energy \citep{Longair1994} of the form
 \begin{equation}
     \frac{{\rm d}n_{\rm \small CR}}{{\rm d}\epsilon} = \frac{n_{\rm norm}}{\epsilon_{\rm min}}
@@ -254,8 +253,9 @@ The magnetic field strength in the IGM at $z=20$ then was likely in the range $4
 The magnetic field strength required to fully randomize the path of a $10^{15}\ev$ CR proton is $\sim$$10^{-14}\,$G; we may therefore assume the CR background is fully isotropic to the limit of our CR spectrum.  
 The Larmor radius for a $10^6\ev$ CR proton in a $10^{-15}\,$G magnetic field, on the other hand, is $\sim$$10\pc$.  
 While unable to freely propagate, under the assumption that magnetic fields at these redshifts are disordered on $\pc$ scales, such CRs will diffuse through the IGM with a diffusion coefficient $D = c r_{\rm L}$.  
-Given that the typical physical distance $L$ between minihalos at $z=20$---derived from the Press-Schechter (\citeyear{PressSchechter1974}) formalism---is $\sim$$10\kpc$, the diffusion time between minihalos, $t_{\rm diff} = L^2/D$, is of order $10^{15}\s$. 
-As this is comparable to the Hubble time at this epoch, such CRs would still be able to contribute to the the build-up of a universal isotropic background for CR energies from $10^6$ to $10^{15}\ev$, an assumption we make throughout the remainder of our analysis.
+Given that the typical physical distance $L$ between minihalos at $z=20$---derived from the Press-Schechter (\citeyear{PressSchechter1974}) formalism---is $\sim$$5\kpc$, the diffusion time between minihalos, $t_{\rm diff} = L^2/D$, is of order $10^{14}\s$, less than the Hubble time at this epoch.
+$10^6\ev$ CRs are thus able to build up a locally isotropic background on scales larger than the typical distahce between minihaloes.
+On the scale of our simulation boxes (see Section \ref{setup}), CRs are thus able to build up an effectively universal and isotropic background from $10^6$ to $10^{15}\ev$, an assumption we make throughout the remainder of our analysis.
 
 Normalising the differential CR spectrum with the aforementioned limits $\epsilon_{\rm min}$ and $\epsilon_{\rm max}$ to the total energy density in cosmic rays, $\ucr$, results in a CR energy spectrum increasing over cosmic time in the following fashion:
  \begin{equation}
@@ -283,9 +283,9 @@ This allows us to bracket the plausible range of energy densities, from values c
 \caption{\label{fig:ucr}
 Cosmic ray energy density $\ucr$ as a function of redshift.  
 Our models, from $u_0$ to $10^5u_0$ are indicated by solid black lines, while the energy density in the CMB and the thermal energy density in the IGM are denoted by dashed and dotted black lines, respectively. 
-The grey region shows the range of possible values for the magnetic field energy density in the IGM, and the dashed red line marks the most conservative upper limit on the CR energy density from \citep{RollindeVangioniOlive2006}, as derived from the $^6$Li abundance. 
+The grey region shows the range of possible values for the magnetic field energy density in the IGM, and the dashed red line marks the most conservative upper limit on the CR energy density from \citet{RollindeVangioniOlive2006}, as derived from the $^6$Li abundance. 
 Blue points indicate the redshift at which Halo 1 collapses to high densities for a given $\ucr$; green points, the redshift at which Halo 2 collapses.  
-Finally, purple points denote the energy densities employed by \citep{StacyBromm2007} to study the impact of a CR background using one-zone models calculated at $z=21$.%
+Finally, purple points denote the energy densities employed by \citet{StacyBromm2007} to study the impact of a CR background using one-zone models calculated at $z=21$.%
 }
 \end{center}
 \end{figure}
@@ -300,7 +300,7 @@ The minihalo in these simulations collapses at a lower redshift; this allows us 
 \label{setup}
 The first set of simulations (henceforth referred to as Halo 1) use the same initial conditions as \citet{Hummeletal2015} and \citet{StacyGreifBromm2010}, and are initialised at $z=100$ in a 140 comoving kpc box with periodic boundary conditions. 
 To accelerate structure formation within the simulation box an artificially enhanced normalisation of the power spectrum, $\sigma_8 = 1.4$, was used, but the simulations are otherwise initialised in accordance with a $\Lambda$CDM model of hierarchical structure formation. 
-For a discussion of the validity of this choice, see \citet{StacyGreifBromm2010}. High resolution in these simulations is achieved using as standard hierarchical zoom-in technique, with nested levels of refinement at 40, 30, and 20 kpc (comoving).  
+For a discussion of the validity of this choice, see \citet{StacyGreifBromm2010}. High resolution in these simulations are achieved using a standard hierarchical zoom-in technique, with nested levels of refinement at 40, 30, and 20 kpc (comoving).  
 Using this technique, the highest resolution SPH particles have a mass $m_{\rm SPH} = 0.015\msun$, yielding a maximum mass resolution $M_{\rm res} \simeq 1.5 N_{\rm neigh} m_{\rm SPH} \lesssim 1\msun$ for the simulation.  
 Here $N_{\rm neigh} = 32$ is the number of particles used in the SPH smoothing kernel \citep{BateBurkert1997}.
 
@@ -311,7 +311,7 @@ After identifying the location of the final minihalo, the cosmological box is re
 Each `parent' particle within the most refined region is split into 64 `child' particles, with a minimum mass of $m_{\rm gas}=1.85\msun$ and $m_{\rm \small DM}=12\msun$. 
 These refined simulations are then run until the gas approaches the typical onset of runaway collapse at $n=10^4\cc$.
 
-\subsection{Halo 2 Cut-out and Refinement}
+\subsubsection{Halo 2 Cut-out and Refinement}
 \label{cutout}
 
 Once the simulation reaches $10^4\cc$ all particles beyond 10 comoving kpc from the centre of the collapsing minihalo are removed to conserve computational resources. 
@@ -362,7 +362,8 @@ As $D_p(n, \epsilon)$ is the mean free path of CRs of energy $\epsilon$ travelin
 \sigma_{CR}(n,\epsilon) = \frac{1}{n D_p(n, \epsilon)}.
 \end{equation}
 
-As the CR penetration depth is $\gg$ than the box size everywhere except approaching the centre of the star-forming minihalo, we may estimate the column density $N$---and thus, the CR attenuation along a given line of sight---using the same technique described in \citep{Hummeletal2015}, where the column density along the pole and equator is well fit by 
+As the CR penetration depth is $\gg$ than the box size everywhere except approaching the centre of the star-forming minihalo, we may estimate the column density $N$---and thus, the CR attenuation along a given line of sight---using the same technique described in \citet{Hummeletal2015}. 
+The gas column density approaching the centre of the accretion disk varies by roughly an order of magnitude between a polar ($N_{\rm \small pole}$) and equatorial ( $N_{\rm \small equator}$) approach, with the column density  along these lines of sight well fit by
 \begin{equation}
 {\rm log}_{10}(N_{\rm \small pole}) = 0.5323\, {\rm log_{10}}(n) + 19.64
 \end{equation}
@@ -370,8 +371,7 @@ and
 \begin{equation}
 {\rm log}_{10}(N_{\rm \small equator}) = 0.6262\, {\rm log_{10}}(n) + 19.57, 
 \end{equation}
-respectively, assuming every line of sight within 45 degrees of the pole experiences column density $N_{\rm \small pole}$ while every other line of sight experiences $N_{\rm \small equator}$ \citep{Hosokawaetal2011}. 
-This allows us to calculate an effective optical depth such that
+respectively. We assume every line of sight within 45 degrees of the pole experiences column density $N_{\rm \small pole}$ while every other line of sight experiences $N_{\rm \small equator}$ \citep{Hosokawaetal2011}, allowing us to calculate an effective optical depth such that
 \begin{equation}
 e^{-\tau_{\rm \small CR}} = \frac{2 \Omega_{\rm \small pole}}{4\pi} e^{-\sigma_{\rm \small CR} N_{\rm \small pole}} + \frac{4\pi - 2 \Omega_{\rm \small pole}}{4\pi} e^{-\sigma_{\rm \small CR} N_{\rm \small eq}},
 \end{equation}
@@ -379,18 +379,6 @@ where
 \begin{equation}
 \Omega_{\rm \small pole} = \int_0^{2\pi}{\rm d}\phi \int_0^{\pi/4}{\rm sin}\theta \,{\rm d}\theta = 1.84\,{\rm sr}.
 \end{equation}
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
 Accounting for this attenuation of the CR background and following the treatment of \citet{StacyBromm2007} and \citet{InayoshiOmukai2011}, the cosmic ray heating rate $\Gamma_{\rm \small CR}$ and ionisation rate $k_{\rm \small CR}$ are given by
 \begin{equation}
@@ -398,7 +386,7 @@ Accounting for this attenuation of the CR background and following the treatment
 \Gamma_{\rm \small CR} = 
     \frac{ E_{\rm \small heat}}{50\,{\rm \small eV}} 
     \int_{\epsilon_{\rm min}}^{\epsilon_{\rm max}} 
-    - \left| \left( \frac{{\rm d}\epsilon} {{\rm d}t} \right)_{\rm ion} \right|
+    \left| \left( \frac{{\rm d}\epsilon} {{\rm d}t} \right)_{\rm ion} \right|
     \frac{dn_{\rm \tiny CR}}{d\epsilon} e^{-\tau_{\rm \small CR}} d\epsilon,
 \end{equation}
 and 
@@ -408,18 +396,23 @@ and
 k_{\rm \small CR} = \frac{\Gamma_{\rm \small CR}}{ n_{\rm \small H} E_{\rm \small heat}}
 \end{equation}
 where $\epsilon_{\rm min} = 10^6\ev$, $\epsilon_{\rm max}= 10^{15}\ev$, $n_{\rm \small H}$ is the number density of hydrogen, and $E_{\rm \small heat}$ is the energy deposited as heat per interaction \citep{Schlickeiser2002}.
-While CRs lose about $50\ev$ per interaction, only about $6\ev$ of that goes towards heating in a neutral medium \citep{SpitzerScott1969,ShullvanSteenberg1985}.
+While CRs lose about $50\ev$ per interaction, only about $6\ev$ of that goes towards heating in a neutral medium \citep{SpitzerScott1969,ShullvanSteenberg1985}; we set $E_{\rm \small heat}$ accordingly.
 
 Here we assume the incident CR background is composed solely of protons, and all interactions occur with hydrogen only.  
-While this neglects the slight difference in average CR energy loss per interaction for hydrogen ($36\ev$; \citet{BakkerSegre1951}) vs helium ($40\ev$; \citet{WeissBernstein1956}), the resulting error in the employed heating and ionisation rates is sufficiently small for our purposes (see \citet{JascheCiardiEnsslin2007} for a rigorous treatment).
+While this neglects the slight difference in average CR energy loss per interaction for hydrogen ($36\ev$; \citealt{BakkerSegre1951}) as compared to helium ($40\ev$; \citealt{WeissBernstein1956}), the resulting error in the employed heating and ionisation rates is sufficiently small for our purposes (see \citealt{JascheCiardiEnsslin2007} for a rigorous treatment). 
+
+The resulting heating and ionisation rates for both the $\ucr=u_0$ and $10^5\,u_0$ cases are shown in Figure \ref{fig:khrates}, along with the expected rates in the absence of attenuation.
+Also shown are the highest and lowest X-ray heating and ionisation rates considered in \citet{Hummeletal2015}. 
+Compared to X-rays, CRs produce significantly less heating per ionisation event and penetrate to much higher densities before being attenuated; the X-ray heating and ionisation rates fall off much faster as the gas becomes optically thick.
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=\columnwidth]{figures/khrates/khrates}
-\caption{Ionisation and heating rates as a function of total gas number density for both a cosmic ray and an X-ray background at $z=25$. 
-In both panels, the solid blue lines denote the rate for our fiducial CR background, $u_0$. The solid red lines show the fiducial X-ray rates from \citet{Hummeletal2015} ($J_0$), while the dashed grey lines demonstrate the expected rates in the absence of gas self-shielding.  
+\caption{\label{fig:khrates}
+Ionisation and heating rates as a function of total gas number density for both a cosmic ray and an X-ray background at $z=25$. 
+In both panels, the solid blue lines denote the rate for our fiducial CR background, $u_0$. The solid red lines show the fiducial X-ray rates from \citet{Hummeletal2015}, while the dashed grey lines demonstrate the expected rates in the absence of gas self-shielding.  
 The dash-dotted blue (red) lines mark the highest-intensity CR (X-ray) heating and ionisation rates investigated. 
-For a given energy density, CRs are more effective at ionising and heating the gas; relative placement on this chart is simply a matter of normalisation. 
+For a given energy density, CRs are more effective at ionising and heating the gas; vertical placement on this chart is simply a matter of normalisation. 
 Note that X-rays cause significantly more heating per ionisation event than CRs, but are strongly attenuated at high densities. CRs are significantly more penetrative in comparison.%
 }
 \end{center}
@@ -432,8 +425,8 @@ Note that X-rays cause significantly more heating per ionisation event than CRs,
 \caption{\label{fig:temp}
 Mass-weighted temperature-density distribution of the gas collapsing into Halo 1 (top) and Halo 2 (bottom), shown just prior to sink formation. 
 Each panel shows the behaviour of gas collapsing under a CR background of a given strength. 
-Each panel shows the behaviour of the gas in the $\ucr=0$ case for comparison; dashed lines denote the CMB temperature when collapse occurs. Gas at low densities gets progressively hotter and gas in the loitering phase gets progressively cooler with increasing $\ucr$. 
-Note that the gas invariably proceeds to collapse, and converges toward a similar thermodynamic state as it approaches sink formation densities, regardless of the CR background strength.%
+In each case the behaviour of the gas in the $\ucr=0$ case for comparison (light grey); dashed lines denote the CMB temperature when collapse occurs. Gas at low densities gets progressively hotter and gas in the loitering phase gets progressively cooler with increasing $\ucr$. 
+Note that the gas invariably proceeds to collapse, and converges toward a similar thermodynamic path as it approaches sink formation densities, regardless of the CR background strength.%
 }
 \end{center}
 \end{figure*}
@@ -450,7 +443,7 @@ and $\rho_{\rm max} = n_{\rm max} m_{\rm H}$.
 Upon creation, the sink immediately accretes the majority of the particles within its smoothing kernel, resulting in an initial mass for the sink particle $M_{\rm sink}$ close to $M_{\rm res} \simeq 1\msun$.  
 Following its creation, the density, temperature, and chemical abundances of the sink particle are no longer updated.  
 The sink's density and temperature are held constant at $10^{12}\cc$ and $650\kelvin$, respectively; the pressure of the sink is set accordingly. 
-Assigning a temperature and pressure to the sink particle allows it to behave as an SPH particle, thus avoiding the creation of an artificial pressure vacuum which would inflate the accretion rate onto the sink \citep[see][]{BrommCoppiLarson2002, MartelEvansShapiro2006}. 
+Assigning a temperature and pressure to the sink particle allows it to behave as an SPH particle, thus avoiding the creation of an artificial pressure vacuum which would artificially enhance the accretion rate onto the sink \citep[see][]{BrommCoppiLarson2002, MartelEvansShapiro2006}. 
 Once the sink is formed, additional particles (including smaller sinks) are accreted as they approach within $r_{\rm acc}$ of that sink particle, and the position and momentum of the sink particle is set to the mass-weighted average of the pre-existing sink and the accreted particle.
 
 \section{Results}
@@ -458,21 +451,6 @@ Once the sink is formed, additional particles (including smaller sinks) are accr
 \subsection{Initial Collapse}
 \subsubsection{CR-enhanced H$_2$ Cooling}
 \label{sec:initial_collapse}
-
-The gas in both Halo 1 and Halo 2 invariably collapses to high densities, even as we vary the CR background strength by five orders of magnitude. 
-As seen in Figure \ref{fig:temp}, the collapse occurs in accordance with the standard picture of Pop III star formation \citep[e.g.,][]{Greifetal2012,StacyBromm2013,Hiranoetal2014,Hosokawaetal2015}, albeit slightly modified by the presence of a CR background.  
-In each case, the gas heats adiabatically as it collapses until reaching $\sim10^3\kelvin$, at which point $\htwo$ cooling activates.  
-This allows the gas to cool to $\sim200\kelvin$, whereupon it enters a `loitering' phase \citep{BrommCoppiLarson2002}, increasing in density quasi-hydrostatically until sufficient mass accumulates to trigger the Jeans instability, typically between $10^4\cc$ and $10^6\cc$. 
-Runaway collapse then proceeds until three-body reactions become important at $n\sim10^8\cc$; this turns the gas fully molecular by $n\sim10^{12}\cc$, at which point we form sink particles.
-
-As seen in Figure \ref{fig:efrac}, as $\ucr$ increases the resulting ionsation boosts the free $\elec$ fraction.  
-This in turn improves the efficiency of $\htwo$ formation, enhancing cooling and allowing gas in the loitering phase to reach progressively lower temperatures. 
-In fact, the additional cooling is sufficient to cool the gas all the way to the CMB floor in the $10^5\,u_0$ case. 
-However as the gas exits the loitering phase and proceeds to higher densities, the CR optical depth increases significantly. 
-In concert with the onset of three-body processes this renders CR ionisation and heating ineffective at high densities. 
-As a result, the thermal behaviour of the gas increasingly resembles that seen in the $\ucr=0$ case as the collapse proceeds. 
-To wit, by the time we form sink particles at  $10^{12}\cc$ the thermodynamic state of the gas is remarkably similar, even as we vary the CR background strength by five orders of magnitude.
-This convergence under a wide range of environmental conditions is similar to that seen in the presence of both an X-ray background \citep{Hummeletal2015} and DM--baryon streaming \citep{StacyBrommLoeb2011a,Greifetal2011b}.
 
 \begin{figure}
 \begin{center}
@@ -490,21 +468,28 @@ Combined with the additional heating provided by the CR background, this allows 
 \includegraphics[width=1\columnwidth]{figures/collapse/collapse}
 \caption{\label{fig:collapse}
 Total gas mass within $1\pc$ of the highest density point in each simulation over cosmic time.
-As $\ucr$ increases, the additional heating and ionisation allow efficient $\htwo$ cooling to activate at progressively lower densities, expediting collapse to high densities.  
+Top: Halo 1; bottom: Halo 2.
+As $\ucr$ increases, the additional heating and ionisation allows the gas to fulfill the Rees-Ostriker (\citeyear{ReesOstriker1977}) criterion ($t_{\rm cool}$ vs. $t_{\rm freefall}$) sooner, expediting collapse to high densities.  
 The sooner runaway collapse sets in, the less time gas has to accumulate in the center of the minihalo, resulting in a lower total mass within $1\pc$ at simulation's end.
-The discontinuity seen in the growth of Halo 2 is a numerical artifact arising from the cut-out and refinement process.}
+The discontinuity seen in the growth of Halo 2 is a numerical artifact arising from the cut-out and refinement process.%
+}
 \end{center}
 \end{figure}
 
-\subsubsection{Expedited Collapse}
-\label{sec:expedited_collapse}
-The CR background also works to heat the gas.  
-In concert with the boosted $\htwo$ fraction, this lowers the density threshold for efficient cooling, expediting the collapse.  
-This is demonstrated in Figure \ref{fig:efrac}, where we see the density at which the gas begins to cool drop as the CR background strength increases.  
-This necessarily expedites the subsequent phases of the collapse, as seen clearly in Figure \ref{fig:collapse}, where we show the total gas mass within 1 pc (physical) of the minihalo's centre as a function of redshift.  
-The impact this has on the environment in which the minihalo collapses is see in Figure \ref{fig:structure}, where we show the final simulation output on various scales for Halo 1 and Halo 2 both in the absence of any CR background ($\ucr=0$) and with $\ucr=10^5\,u_0$. 
-Low density filamentary gas is heated and prevented from collapsing, while gas above a $\ucr$-dependent density threshold experiences enhanced cooling and thus has its collapse expedited.
-As a result, the dynamical environment in which the first sink particles form varies significantly depending on the strength of the CR background.
+The gas in both Halo 1 and Halo 2 invariably collapses to high densities, even as we vary the CR background strength by five orders of magnitude. 
+As seen in Figure \ref{fig:temp}, the collapse occurs in accordance with the standard picture of Pop III star formation \citep[e.g.,][]{Greifetal2012,StacyBromm2013,Hiranoetal2014,Hosokawaetal2015}, albeit slightly modified by the presence of a CR background.  
+In each case, the gas heats adiabatically as it collapses until reaching $\sim10^3\kelvin$, at which point $\htwo$ cooling is activated.  
+This allows the gas to cool to $\sim200\kelvin$, whereupon it enters a `loitering' phase \citep{BrommCoppiLarson2002}, increasing in density quasi-hydrostatically until sufficient mass accumulates to trigger the Jeans instability, typically between $10^4\cc$ and $10^6\cc$. 
+Runaway collapse then proceeds until three-body reactions become important at $n\sim10^8\cc$; this turns the gas fully molecular by $n\sim10^{12}\cc$, at which point we insert sink particles.
+
+As demonstrated in Figure \ref{fig:efrac}, increasing $\ucr$ both heats the gas and boosts the resulting ionsation fraction.
+This in turn increases the efficiency of $\htwo$ formation, enhancing cooling and allowing gas in the loitering phase to reach progressively lower temperatures. 
+In fact, the additional cooling is sufficient to cool the gas all the way to the CMB floor when $\ucr \gtrsim 10^4\,u_0$. 
+However as the gas exits the loitering phase and proceeds to higher densities, the CR optical depth increases significantly. 
+In concert with the onset of three-body processes this renders CR ionisation and heating ineffective at high densities. 
+As a result, the thermal behaviour of the gas increasingly resembles that seen in the $\ucr=0$ case as the collapse proceeds. 
+To wit, by the time we form sink particles at  $10^{12}\cc$ the thermodynamic state of the gas is remarkably similar, even as we vary the CR background strength by five orders of magnitude.
+This convergence under a wide range of environmental conditions is similar to that seen in the presence of both an X-ray background \citep{Hummeletal2015} and DM--baryon streaming \citep{StacyBrommLoeb2011a,Greifetal2011b}.
 
 \begin{figure*}
 \begin{center}
@@ -515,7 +500,7 @@ Shown is a density projection of the minihalo environment on progressively small
 White boxes indicate the region depicted on the next smaller scale.  
 From left to right: filamentary structure of the cosmic web near the minihalo formation site; minihalo formation at the intersection of several filaments; morphology within the $\sim$$100\pc$ virial radius of the minihalo. 
 The density scale for each level is shown just to the right -- note that the scaling changes from panel to panel. Note how the gas in the $\ucr=10^5\,u_0$ simulations appears smoothed out compared to the $\ucr=0$ simulations.  
-This is due not only to CR heating impeding the collapse, but also to the fact that CR ionisation helps expedite the collapse of gas above a certain density, leaving less time for low-density structure to form.  
+Not only do CRs heat and smooth the filamentary gas, the expedited collapse induced by CR ionisation leaves less time for low-density structure to form.  
 As a result, the dynamical environment in which the sink particles form varies significantly between simulations.%
 }
 \end{center}
@@ -530,14 +515,37 @@ Growth of individual sink particles in each simulation over time, with the first
 Lines end where one sink is accreted by another. 
 The Halo 1 suite of simulations is shown in the left panel, Halo 2 in the right panel.  
 The growth of the sinks in the corresponding $\ucr=0$ is shown in grey in the background of each panel for comparison. 
-There are no apparent trends with increasing $\ucr$ -- neither in typical sink mass nor in the number of fragments formed.
+There are no apparent trends with increasing $\ucr$ -- neither in typical sink mass nor in the number of fragments formed.%
+}
+\end{center}
+\end{figure*}
+
+\subsubsection{Expedited Collapse}
+\label{sec:expedited_collapse}
+Boosting the $\htwo$ fraction in the gas lowers the density threshold for efficient cooling, allowing the gas to fulfill the Rees-Ostriker (\citeyear{ReesOstriker1977}) criterion sooner by driving the cooling time $t_{\rm \small cool}$ below the freefall time $t_{\rm \small ff}$.
+This is demonstrated in Figure \ref{fig:efrac}, where we see the density at which the gas begins to cool drop as the CR background strength increases.  
+This necessarily expedites the subsequent phases of the collapse, as seen clearly in Figure \ref{fig:collapse}, where we show the total gas mass within 1 pc (physical) of the minihalo's centre as a function of redshift.  
+The impact this has on the environment in which the minihalo collapses is seen in Figure \ref{fig:structure}, where we show the final simulation output on various scales for Halo 1 and Halo 2, both in the absence of any CR background ($\ucr=0$) and with $\ucr=10^5\,u_0$. 
+Low density filamentary gas is heated and prevented from collapsing, reducing the clumping of the IGM and possibly impacting the early stages of reionisation.
+Gas above a $\ucr$-dependent density threshold on the other hand experiences enhanced cooling and thus has its collapse expedited.
+As a result, the dynamical environment in which the first sink particles form varies significantly depending on the strength of the CR background.
+
+\begin{figure*}
+\begin{center}
+\includegraphics[width=1\textwidth]{figures/disks/disks}
+\caption{\label{fig:disks} 
+Density projection of the central $20\,000\au$ of each simulation $5000\yr$ after the formation of the first sink particle.
+Upper panel: Halo 1; lower panel: Halo 2.
+Each accretion disc is shown face-on; sink particle positions are identified by black dots whose size scales logarithmically with the mass of the sink.
+In each panel the accretion disk formed in the absence of any CR background is shown on the left; the corresponding $\ucr$-modified discs are shown to the right.
+Note the broad variation in both disc structure and spatial extent.%
 }
 \end{center}
 \end{figure*}
 
 \subsection{Star Formation}
 \subsubsection{Protostellar Fragmentation and Growth}
-\label{sec:sink_formation}
+\label{sub:sink_formation}
 
 Figure \ref{fig:sinks} shows the growth over time of all sink particles formed in our simulations, from formation of the first sink particle to simulation's end $5000\yr$ later when radiative feedback can no longer be ignored. 
 The first sink particle forms when the gas in the centre of the minihalo reaches densities of $10^{12}\cc$, and develops an accretion disk within a few hundred years. 
@@ -550,17 +558,14 @@ This  can be primarily attributed to the wide variety of dynamical environments 
 This variation is a direct consequence of the expedited collapse discussed in Section \ref{sec:expedited_collapse}. 
 As seen in Figure \ref{fig:structure}, expediting the initial collapse results in significant variation of the experienced gravitational potential; the collapse history of the gas and the dynamical environment in which the sinks form varies accordingly.
 Given the lack of any apparent trends with increasing $\ucr$, this suggests the final stages of the collapse are influenced more by small-scale turbulence than the strength of the CR background.
-While CRs may indeed alter the susceptibility of the disk to fragmentation, any such behaviour is unfortunately obfuscated by variations in the collapse history between simulations.
+While CRs may indeed alter the susceptibility of the disk to fragmentation, any such behaviour is masked by variations in the collapse history between simulations.
 
 \begin{figure*}
 \begin{center}
-\includegraphics[width=1\textwidth]{figures/disks/disks}
-\caption{\label{fig:disks} 
-Density projection of the central $20\,000\au$ of each simulation $5000\yr$ after the formation of the first sink particle.
-Upper panel: Halo 1; lower panel: Halo 2.
-Each accretion disc is shown face-on; sink particle positions are identified by black dots which scale logarithmically with the mass of the sink.
-In each panel the accretion disk formed in the absence of any CR background is shown on the left; the corresponding $\ucr$-modified discs are shown to the right.
-Note the broad variation in both disc structure and spatial extent.
+\includegraphics[width=1\textwidth]{figures/binned_T_Mbe/binned_T_Mbe}
+\caption{\label{fig:Mbe}
+Density-binned average temperature (top) and Bonnor-Ebert mass (bottom) for Halo 1 (left) and Halo 2(right) for all CR background strengths, as labeled.
+Overlaid on each panel are the one-zone calculations of \citet{StacyBromm2007}, which only tracked the gas evolution up to densities of $10^6\cc$, insufficient to observe the $\ucr$-independent convergence in the thermodynamic state of the gas as it proceeds to runaway collapse.%
 }
 \end{center}
 \end{figure*}
@@ -580,21 +585,11 @@ The universality of this characteristic mass is further supported by Figure \ref
 where $n$ and $T$ are the number density and corresponding average temperature.
 Approaching sink formation densities $M_{\rm \small BE}$ is nearly independent of $\ucr$, in agreement with the observed lack of evolution in the sink mass.
 
-Also show in Figure \ref{fig:Mbe} are the one-zone calculations from \citet{StacyBromm2007}.
+Also shown in Figure \ref{fig:Mbe} are the one-zone calculations from \citet{StacyBromm2007}.
 Investigating the impact of a CR background on Pop III star formation in a $z=21$ minihalo using the CR background strengths shown in Figure \ref{fig:ucr}, their models suggested 
 that a sufficiently strong background might decrease the fragmentation mass scale by an order of magnitude as a result of the cooler temperatures experienced during the loitering phase.
 While we observe similar behaviour from gas in the loitering phase, once the gas proceeds to runaway collapse its thermodynamic state quickly converges with that of the $\ucr=0$ case, such that the fragmentation mass scale remains unaltered.
 Unfortunately the models of \citet{StacyBromm2007} only followed the gas evolution up to densities of $10^6\cc$, insufficient to observe this convergent behaviour.
-
-\begin{figure*}
-\begin{center}
-\includegraphics[width=1\textwidth]{figures/binned_T_Mbe/binned_T_Mbe}
-\caption{\label{fig:Mbe}
-Density-binned average temperature (top) and Bonnor-Ebert mass (bottom) for Halo 1 (left) and Halo 2(right) for all CR background strengths, as labeled.
-Overlaid on each panel are the one-zone calculations of \citet{StacyBromm2007}, which only tracked the gas evolution up to densities of $10^6\cc$, insufficient to observe the $\ucr$-independent convergence in the thermodynamic state of the gas as it proceeds to runaway collapse.
-}
-\end{center}
-\end{figure*}
 
 \section{Summary and Conclusions}
 \label{conclusions}
