@@ -11,8 +11,8 @@ figures/khrates/khrates.png
 figures/temp/temp.png
 figures/temp/temp_halo2.png
 Sink Particles.tex
-Results: Initial Collapse.tex
 figures/binned_T_efrac/binned_T_efrac.png
+Results: Initial Collapse.tex
 figures/collapse/collapse.png
 Expedited Collapse.tex
 figures/structure/structure.png
