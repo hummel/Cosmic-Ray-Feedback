@@ -20,6 +20,6 @@ figures/sink_masses/sink_masses_halo2.png
 Expedited Collapse.tex
 figures/disks/disks.png
 Sink Formation.tex
-Characteristic Mass.tex
 figures/binned_T_Mbe/binned_T_Mbe.png
+Characteristic Mass.tex
 conclusions.tex
