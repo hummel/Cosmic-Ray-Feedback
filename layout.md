@@ -12,8 +12,8 @@ figures/temp/temp.png
 figures/temp/temp_halo2.png
 Sink Particles.tex
 figures/binned_T_efrac/binned_T_efrac.png
-Results: Initial Collapse.tex
 figures/collapse/collapse.png
+Results: Initial Collapse.tex
 Expedited Collapse.tex
 figures/structure/structure.png
 figures/sink_masses/sink_masses_halo1.png
