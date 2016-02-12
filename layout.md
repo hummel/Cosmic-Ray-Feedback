@@ -14,10 +14,10 @@ Sink Particles.tex
 figures/binned_T_efrac/binned_T_efrac.png
 figures/collapse/collapse.png
 Results: Initial Collapse.tex
-Expedited Collapse.tex
 figures/structure/structure.png
 figures/sink_masses/sink_masses_halo1.png
 figures/sink_masses/sink_masses_halo2.png
+Expedited Collapse.tex
 Sink Formation.tex
 figures/disks/disks.png
 Characteristic Mass.tex
