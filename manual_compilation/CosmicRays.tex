@@ -160,7 +160,7 @@ CRs both heat and ionise the gas, boosting $\htwo$ formation.
 Additional $\htwo$ enhances the cooling efficiency of the gas, allowing it to fulfil the Rees-Ostriker criterion sooner and expediting the collapse, such that each simulation reaches high densities at a different epoch. 
 As it exits the loitering phase, the thermodynamic path of the collapsing gas converges to that seen in the absence of any CR background. 
 By the time the gas approaches sink formation densities, the thermodynamic state of the gas is thus remarkably similar across all simulations. 
-This leads to a robust characteristic mass that is largely independent of the CR background, of order $\sim$ a few $\times10\msun$ even as the CR backround strength varies by five orders of magnitude.
+This leads to a robust characteristic mass that is largely independent of the CR background, of order $\sim$ a few $\times10\msun$ even as the CR background strength varies by five orders of magnitude.
 \end{abstract}
 \bibliographystyle{mnras}
 
@@ -208,7 +208,7 @@ Finally, our conclusions are gathered in Section \ref{conclusions}. Throughout t
 
 \section{Cosmic Rays in the Early Universe}
 \label{sec:context}
-While there are several possible sources of CRs at high redshifts including primordial black holes, topological defects, supermassive particles, and structure formation shocks, the most likely source in the early Universe is supernova (SN) explosions \citep[e.g.,][]{GinzburgSyrovatskii1969,BiermannSigl2001,Stanev2004,Pfrommeretal2006}, wherein CRs are accelerated by the SN shock wave via the first-order Fermi process.  
+While there are several possible sources of CRs at high redshifts including primordial black holes, topological defects, supermassive particles, and structure formation shocks, the most likely source in the early Universe is supernova (SN) explosions \citep[e.g.,][]{GinzburgSyrovatskii1969,BiermannSigl2001,Stanev2004,Pfrommeretal2006}, wherein CRs are accelerated by the SN shock wave via the first-order Fermi process \citep[e.g.,][]{Bell1978}.  
 In this scenario, high-energy particles diffuse back and forth across the shock front, increasing their energy by a small percentage each time, and resulting in a differential spectrum of CR number density per energy \citep{Longair1994} of the form
 \begin{equation}
     \frac{{\rm d}n_{\rm \small CR}}{{\rm d}\epsilon} = \frac{n_{\rm norm}}{\epsilon_{\rm min}}
@@ -301,7 +301,7 @@ The first set of simulations (henceforth referred to as Halo 1) use the same ini
 To accelerate structure formation within the simulation box an artificially enhanced normalisation of the power spectrum, $\sigma_8 = 1.4$, was used, but the simulations are otherwise initialised in accordance with a $\Lambda$CDM model of hierarchical structure formation. 
 For a discussion of the validity of this choice, see \citet{StacyGreifBromm2010}. 
 High resolution in these simulations is achieved using a standard hierarchical zoom-in technique, with nested levels of refinement at 40, 30, and 20 kpc (comoving).  
-Using this technique, the highest resolution SPH particles have a mass $m_{\rm SPH} = 0.015\msun$, yielding a maximum mass resolution $M_{\rm res} \simeq 1.5 N_{\rm neigh} m_{\rm SPH} \lesssim 1\msun$ for the simulation.  
+Using this technique, the highest resolution SPH particles have a mass $m_{\rm SPH} = 0.015\msun$, yielding a minimum mass resolution $M_{\rm res} \simeq 1.5 N_{\rm neigh} m_{\rm SPH} \lesssim 1\msun$ for the simulation.  
 Here $N_{\rm neigh} = 32$ is the number of particles used in the SPH smoothing kernel \citep{BateBurkert1997}.
 
 The initial conditions for the second set of simulations (henceforth referred to as Halo 2) are derived from the simulations described in \citet{StacyBromm2013}.  
@@ -357,7 +357,7 @@ and
 \end{equation}
 Here, $({\rm d}\epsilon / {\rm d}t)_{\rm ion}$ is the rate at which a CR proton loses energy to ionisation. 
 $\beta_0$ is the cutoff below which the interaction between CRs and the gas decreases sharply; we use $\beta_0=0.01$, appropriate for CRs travelling through a neutral IGM \citep{StacyBromm2007}.
-As $D_p(n, \epsilon)$ is the mean free path of CRs of energy $\epsilon$ traveling through a gas with number density $n$, we may define an effective cross-section $\sigma_{CR}(n,\epsilon)$ for the interaction
+As $D_p(n, \epsilon)$ is the mean free path of CRs of energy $\epsilon$ travelling through a gas with number density $n$, we may define an effective cross-section $\sigma_{CR}(n,\epsilon)$ for the interaction
 \begin{equation}
 \sigma_{CR}(n,\epsilon) = \frac{1}{n D_p(n, \epsilon)}.
 \end{equation}
@@ -387,7 +387,7 @@ where
 Ionisation and heating rates as a function of total gas number density for both a cosmic ray and an X-ray background at $z=25$. 
 In both panels, the solid blue lines denote the rate for our fiducial CR background, $u_0$. The solid red lines show the fiducial X-ray rates from \citet{Hummeletal2015}, while the dashed grey lines demonstrate the expected rates in the absence of gas self-shielding.  
 The dash-dotted blue (red) lines mark the highest-intensity CR (X-ray) heating and ionisation rates investigated. 
-For a given energy density, CRs are more effective at ionising and heating the gas; vertical placement on this chart is simply a matter of normalisation. 
+For a given energy density, CRs are more effective at ionising and heating the gas; vertical placement on this chart is simply a matter of normalisation, stemming from the assumptions outlined in Section \ref{sec:context}. 
 Note that X-rays cause significantly more heating per ionisation event than CRs, but are strongly attenuated at high densities. CRs are significantly more penetrative in comparison.%
 } 
 \end{center}
@@ -408,7 +408,6 @@ Note that the gas invariably proceeds to collapse, and converges toward a simila
 
 Accounting for this attenuation of the CR background and following the treatment of \citet{StacyBromm2007} and \citet{InayoshiOmukai2011}, the cosmic ray heating rate $\Gamma_{\rm \small CR}$ and ionisation rate $k_{\rm \small CR}$ are given by
 \begin{equation}
-%\Gamma_{\rm \small CR} = n_{\rm \small H} E_{\rm \small heat} k_{\rm \small CR}.
 \Gamma_{\rm \small CR} = 
     \frac{ E_{\rm \small heat}}{50\,{\rm \small eV}} 
     \int_{\epsilon_{\rm min}}^{\epsilon_{\rm max}} 
@@ -417,9 +416,7 @@ Accounting for this attenuation of the CR background and following the treatment
 \end{equation}
 and 
 \begin{equation}
-%k_{\rm \small CR} = \frac{1.82\times10^{-7}\,{\rm \small eV\,s}^{-1}}{50\,{\rm \small eV}} 
-%    \int_{\epsilon_{\rm min}}^{\epsilon_{\rm max}} f(\epsilon) \frac{dn_{\rm \tiny CR}}{d\epsilon} d\epsilon,
-k_{\rm \small CR} = \frac{\Gamma_{\rm \small CR}}{ n_{\rm \small H} E_{\rm \small heat}}
+k_{\rm \small CR} = \frac{\Gamma_{\rm \small CR}}{ n_{\rm \small H} E_{\rm \small heat}},
 \end{equation}
 where $\epsilon_{\rm min} = 10^6\ev$, $\epsilon_{\rm max}= 10^{15}\ev$, $n_{\rm \small H}$ is the number density of hydrogen, and $E_{\rm \small heat}$ is the energy deposited as heat per interaction \citep{Schlickeiser2002}.
 While CRs lose about $50\ev$ per interaction, only about $6\ev$ of that goes towards heating in a neutral medium \citep{SpitzerScott1969,ShullvanSteenberg1985}; we set $E_{\rm \small heat}$ accordingly.
@@ -430,7 +427,6 @@ While this neglects the slight difference in average CR energy loss per interact
 The resulting heating and ionisation rates for both the $\ucr=u_0$ and $10^5\,u_0$ cases are shown in Figure \ref{fig:khrates}, along with the expected rates in the absence of attenuation.
 Also shown are the highest and lowest X-ray heating and ionisation rates considered in \citet{Hummeletal2015}. 
 Compared to X-rays, CRs produce significantly less heating per ionisation event and penetrate to much higher densities before being attenuated; the X-ray heating and ionisation rates fall off much faster as the gas becomes optically thick.
-
 \subsection{Sink Particles}
 \label{sinkParticles}
 Our sink particle method is described in \citet{StacyGreifBromm2010}. 
@@ -463,9 +459,9 @@ Combined with the additional heating provided by the CR background, this allows 
 \caption{\label{fig:collapse}
 Total gas mass within $1\pc$ of the highest density point in each simulation over cosmic time.
 Top: Halo 1; bottom: Halo 2.
-As $\ucr$ increases, the additional heating and ionisation allows the gas to fulfill the Rees-Ostriker criterion ($t_{\rm cool} \lesssim t_{\rm ff}$) sooner, expediting collapse to high densities.  
-The sooner runaway collapse sets in, the less time gas has to accumulate in the center of the minihalo, resulting in a lower total mass within $1\pc$ at simulation's end.
-The discontinuity seen in the growth of Halo 2 is a numerical artifact arising from the cut-out and refinement process.%
+As $\ucr$ increases, the additional heating and ionisation allows the gas to fulfil the Rees-Ostriker criterion ($t_{\rm cool} \lesssim t_{\rm ff}$) sooner, expediting collapse to high densities.  
+The sooner runaway collapse sets in, the less time gas has to accumulate in the centre of the minihalo, resulting in a lower total mass within $1\pc$ at simulation's end.
+The discontinuity seen in the growth of Halo 2 is a numerical artefact arising from the cut-out and refinement process.%
 }
 \end{center}
 \end{figure}
@@ -496,7 +492,7 @@ This convergence under a wide range of environmental conditions is similar to th
 \includegraphics[width=.95\textwidth]{figures/structure/structure}
 \caption{\label{fig:structure}
 Simulation structure for both Halo 1 (top) and Halo 2 (bottom) as seen in the final output, $5000\yr$ after the first sink forms.  
-Shown is a density projection of the minihalo environment on progressively smaller scales for both the $\ucr=0$ and $\ucr=10^5\,u_0$ simulations, as labeled.  
+Shown is a density projection of the minihalo environment on progressively smaller scales for both the $\ucr=0$ and $\ucr=10^5\,u_0$ simulations, as labelled.  
 White boxes indicate the region depicted on the next smaller scale.  
 From left to right: filamentary structure of the cosmic web near the minihalo formation site; minihalo formation at the intersection of several filaments; morphology within the $\sim$$100\pc$ virial radius of the minihalo. 
 The density scale for each level is shown just to the right -- note that the scaling changes from panel to panel.
@@ -565,7 +561,7 @@ While CRs may indeed alter the susceptibility of the disk to fragmentation, any 
 \begin{center}
 \includegraphics[width=1\textwidth]{figures/binned_T_Mbe/binned_T_Mbe}
 \caption{\label{fig:Mbe}
-Density-binned average temperature (top) and Bonnor-Ebert mass (bottom) for Halo 1 (left) and Halo 2(right) for all CR background strengths, as labeled.
+Density-binned average temperature (top) and Bonnor-Ebert mass (bottom) for Halo 1 (left) and Halo 2(right) for all CR background strengths, as labelled.
 Overlaid on each panel are the one-zone calculations of \citet{StacyBromm2007}, which only tracked the gas evolution up to densities of $10^6\cc$, insufficient to observe the $\ucr$-independent convergence in the thermodynamic state of the gas as it proceeds to runaway collapse.%
 }
 \end{center}
@@ -614,14 +610,16 @@ This convergence is observed in all simulations for both Halo 1 and Halo 2, with
 The remarkable similarity in the thermodynamic state of the gas just prior to sink formation suggests the presence of a CR background has little impact on the characteristic mass of the stars formed.  
 Indeed, the typical mass of the sink particles formed is quite robust, remaining stable across all simulations at $10-40\msun$, very much in line with the expected mass of the first stars in the absence of external radiative feedback. In fact, this robust behaviour is observed under a variety of environmental conditions, including X-ray irradiation \citep{Hummeletal2015} and DM--baryon streaming \citep{StacyBrommLoeb2011a,Greifetal2011b}.
 
-While the neutral impact of the CR background on the thermodynamic state of primordial gas at high densities results in a robust characteristic mass that does not vary with $\ucr$, there is a possibility that the enhanced cooling resulting from CR ionisation may increase the velocity dispersion of the infalling gas \citep{Clarketal2011a}.  
-This would result in more turbulence in the centre of the minihalo, suppressing the overall star formation efficiency.  
+While the neutral impact of the CR background on the thermodynamic state of primordial gas at high densities results in a robust characteristic mass that does not vary with $\ucr$, there is a possibility that the enhanced cooling resulting from CR ionisation may decrease the velocity dispersion of the infalling gas \citep{Clarketal2011a}.  
+This would decrease fragmentation in the centre of the minihalo, possibly increasing the mass of the stars formed.
 While we see no evidence to support this, any such systematic effect could be easily masked by the variations in collapse history between simulations.  
 Likewise, the fact that each simulation collapses to high densities at a different epoch in a different gravitational potential well limits our ability to draw detailed conclusions regarding the impact of the CR background on fragmentation in the protostellar accretion disc.
 
 Finally, while the characteristic mass---and thus, ionising output---of Pop III stars appears to be unaffected by the presence of a CR background, CRs still heat the low-density gas in the IGM, reducing its clumping factor. This may have implications for reionisation and the 21-cm signal \citep{FurlanettoPengBriggs2006, SazonovSunyaev2015}.
+
 \section*{Acknowledgements}
-The authors acknowledge the Texas Advanced Computing Center (TACC) at The University of Texas at Austin for providing HPC resources under XSEDE allocation TG-AST120024. This study was supported in part by NSF grant AST-1413501. A.S. gratefully acknowledges support through NSF grants \underline{AST-0908553} and  \underline{AST-1211729}. This research has made use of NASA's Astrophysics Data System and Astropy, a community-developed core Python package for Astronomy \citep{Robitailleetal2013}.
+The authors acknowledge the Texas Advanced Computing Center (TACC) at The University of Texas at Austin for providing HPC resources under XSEDE allocation TG-AST120024. This study was supported in part by NSF grant AST-1413501. A.S. gratefully acknowledges support through NSF grants AST-0908553 and  AST-1211729. This research has made use of NASA's Astrophysics Data System and Astropy, a community-developed core Python package for Astronomy \citep{Robitailleetal2013}.
+
 \bibliography{bibliography/biblio.bib}
 
 \end{document}
